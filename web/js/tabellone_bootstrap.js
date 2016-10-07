@@ -20,10 +20,12 @@ a.tab.init = function (){
 	data.rows = [{
 		id:1,name: "Napoleone",
 		surname: "Bonaparte",
+		adress: "Isola San'Elena",
 		level: 3,
 		sex: "male",
 		online: "offline",
 		born: "15/08/1769"
+		
 	}];
 		
 	data.columns = [{
@@ -36,6 +38,9 @@ a.tab.init = function (){
                 field: 'surname',
                 title: 'Cognome'
             }, {
+				field: 'adress',
+				title: 'Indirizzo'
+			},{
                 field: 'level',
                 title: 'Livello'
             }, {
@@ -64,6 +69,10 @@ a.tab.init = function (){
 		e.preventDefault(); // prevent form submit from HTML
 		data.addStudent($table);		
 	});
+
+	$("removeStudent").onDbClickRow(function(e){
+		
+	})
 }
 
 /**
