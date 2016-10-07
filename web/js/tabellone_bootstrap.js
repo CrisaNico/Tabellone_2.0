@@ -70,7 +70,7 @@ a.tab.init = function (){
 		data.addStudent($table);		
 	});
 
-	$("removeStudent").onDbClickRow(function(e){
+	$("removeStudent").onDbClickRow(function(<){
 		
 	})
 }
