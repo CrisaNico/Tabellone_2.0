@@ -96,3 +96,6 @@ a.tab.addStudent = function (table)
 	// append in table
 	table.bootstrapTable('append', student);
 }
+$('#tabellone').on('dbl-click-row.bs.table', function(e, row, $field){
+	$field.remove();
+})
